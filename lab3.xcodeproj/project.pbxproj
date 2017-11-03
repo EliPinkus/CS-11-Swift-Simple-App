@@ -8,22 +8,26 @@
 
 /* Begin PBXBuildFile section */
 		45CA87881FA115BF00AE070B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45CA87871FA115BF00AE070B /* AppDelegate.swift */; };
-		45CA878A1FA115BF00AE070B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45CA87891FA115BF00AE070B /* ViewController.swift */; };
+		45CA878A1FA115BF00AE070B /* NewCacheViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45CA87891FA115BF00AE070B /* NewCacheViewController.swift */; };
 		45CA878D1FA115BF00AE070B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45CA878B1FA115BF00AE070B /* Main.storyboard */; };
 		45CA878F1FA115BF00AE070B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 45CA878E1FA115BF00AE070B /* Assets.xcassets */; };
 		45CA87921FA115BF00AE070B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45CA87901FA115BF00AE070B /* LaunchScreen.storyboard */; };
 		45CA879A1FA117FA00AE070B /* GeoCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45CA87991FA117F900AE070B /* GeoCache.swift */; };
+		45CBD0E91FAC0AEC00F82711 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45CBD0E81FAC0AEC00F82711 /* TableViewController.swift */; };
+		45CBD0EB1FAC226E00F82711 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45CBD0EA1FAC226E00F82711 /* DetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		45CA87841FA115BF00AE070B /* lab3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = lab3.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		45CA87871FA115BF00AE070B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		45CA87891FA115BF00AE070B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		45CA87891FA115BF00AE070B /* NewCacheViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewCacheViewController.swift; sourceTree = "<group>"; };
 		45CA878C1FA115BF00AE070B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		45CA878E1FA115BF00AE070B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		45CA87911FA115BF00AE070B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		45CA87931FA115BF00AE070B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		45CA87991FA117F900AE070B /* GeoCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeoCache.swift; sourceTree = "<group>"; };
+		45CBD0E81FAC0AEC00F82711 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		45CBD0EA1FAC226E00F82711 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,7 +62,9 @@
 			children = (
 				45CA87991FA117F900AE070B /* GeoCache.swift */,
 				45CA87871FA115BF00AE070B /* AppDelegate.swift */,
-				45CA87891FA115BF00AE070B /* ViewController.swift */,
+				45CBD0E81FAC0AEC00F82711 /* TableViewController.swift */,
+				45CA87891FA115BF00AE070B /* NewCacheViewController.swift */,
+				45CBD0EA1FAC226E00F82711 /* DetailViewController.swift */,
 				45CA878B1FA115BF00AE070B /* Main.storyboard */,
 				45CA878E1FA115BF00AE070B /* Assets.xcassets */,
 				45CA87901FA115BF00AE070B /* LaunchScreen.storyboard */,
@@ -140,8 +146,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				45CA879A1FA117FA00AE070B /* GeoCache.swift in Sources */,
-				45CA878A1FA115BF00AE070B /* ViewController.swift in Sources */,
+				45CA878A1FA115BF00AE070B /* NewCacheViewController.swift in Sources */,
+				45CBD0EB1FAC226E00F82711 /* DetailViewController.swift in Sources */,
 				45CA87881FA115BF00AE070B /* AppDelegate.swift in Sources */,
+				45CBD0E91FAC0AEC00F82711 /* TableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
