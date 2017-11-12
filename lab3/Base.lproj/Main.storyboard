@@ -131,11 +131,11 @@
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="eFk-HE-YRP" id="W1S-KC-8mO">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="mCK-Ww-K9j">
-                                            <rect key="frame" x="16" y="0.0" width="344" height="43"/>
+                                            <rect key="frame" x="16" y="0.0" width="344" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
@@ -198,8 +198,19 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LCg-zh-h5Q">
+                                <rect key="frame" x="30" y="20" width="34" height="30"/>
+                                <state key="normal" title="Back"/>
+                                <connections>
+                                    <segue destination="few-Ov-GFn" kind="show" id="wPZ-jr-0J1"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="LCg-zh-h5Q" firstAttribute="top" secondItem="0FV-Q2-088" secondAttribute="top" id="azN-eN-Dt4"/>
+                            <constraint firstItem="LCg-zh-h5Q" firstAttribute="leading" secondItem="0FV-Q2-088" secondAttribute="leading" constant="30" id="fap-LU-o2c"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="0FV-Q2-088"/>
                     </view>
                     <navigationItem key="navigationItem" id="RZs-0R-pEH"/>
@@ -250,5 +261,6 @@
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="X3p-4x-Une"/>
+        <segue reference="wPZ-jr-0J1"/>
     </inferredMetricsTieBreakers>
 </document>
