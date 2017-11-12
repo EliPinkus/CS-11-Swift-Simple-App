@@ -70,7 +70,6 @@ class TableViewController: UITableViewController {
             if let view = segue.destination as? DetailViewController
             {
                 view.info = caches[((sender as? IndexPath)?.row)!].desription
-                print("epnis")
             }
             
         }
