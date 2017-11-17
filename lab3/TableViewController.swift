@@ -12,10 +12,13 @@ class TableViewController: UITableViewController {
     var caches: [GeoCache] = []
     override func viewDidLoad() {
         super.viewDidLoad()
-        if let init_caches: [GeoCache] = loadCachesFromDefaults()
-        {
-            caches = init_caches
-        }
+        loadCachesFromServer(onComplete: { (loadedCaches) in
+            self.caches = loadedCaches
+            DispatchQueue.main.async {
+                self.tableView.reloadData()
+            }
+        })
+
         print(caches.count)
 
         // Uncomment the following line to preserve selection between presentations
@@ -51,8 +54,8 @@ class TableViewController: UITableViewController {
         let controller: NewCacheViewController = sender.source as! NewCacheViewController
         if let cache = controller.cache
         {
-            caches.append(cache)
-            saveCachesToDefaults(caches)
+            self.caches.append(cache)
+            sendCacheToServer(cache)
             tableView.insertRows(at: [IndexPath(row: caches.count-1,section: 0)], with: .left)
             
         }

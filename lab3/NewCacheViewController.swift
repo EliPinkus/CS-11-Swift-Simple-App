@@ -44,7 +44,7 @@ class NewCacheViewController: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if titleField.text! != "" && detailsField.text! != "" && creatorField.text! != "" && rewardField.text! != ""
         {
-            let newCache = GeoCache(titleField.text!,detailsField.text!,creatorField.text!,rewardField.text!)
+            let newCache = GeoCache(titleField.text!,detailsField.text!,creatorField.text!,rewardField.text!, randomCacheId())
             cache = newCache
         }
         else
