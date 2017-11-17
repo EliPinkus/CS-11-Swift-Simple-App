@@ -44,6 +44,7 @@ struct GeoCache
             result["details"] = self.details
             result["creator"] = self.creator
             result["reward"] = self.details
+            result["id"] = self.id
             
             return result
         }
@@ -93,8 +94,8 @@ func saveCachesToDefaults(_ caches: [GeoCache])
 
 func sendCacheToServer(_ cache: GeoCache)
 {
-    let target = URL(fileURLWithPath: "http://localhost:5000/createCache")
-    var request = URLRequest(url: target)
+    let target = URL(string: "http://localhost:5000/createCache")
+    var request = URLRequest(url: target!)
     request.httpMethod = "POST"
     let data = try? JSONSerialization.data(withJSONObject: cache.dictionary)
     request.httpBody = data
@@ -117,8 +118,8 @@ func sendCacheToServer(_ cache: GeoCache)
 func loadCachesFromServer(onComplete: @escaping ([GeoCache]) -> ())
 {
     var result = [GeoCache]()
-    let target = URL(fileURLWithPath: "http://localhost:5000/getCaches")
-    var request = URLRequest(url: target)
+    let target = URL(string: "http://localhost:5000/getCaches")
+    var request = URLRequest(url: target!)
     request.httpMethod = "GET"
     let task = URLSession.shared.dataTask(with: request, completionHandler:
     {
